@@ -1,0 +1,2 @@
+D:/Edu/Semester 6/koma/inote/android/app/.cxx/RelWithDebInfo/3g5p312b/x86/CMakeFiles/edit_cache.dir
+D:/Edu/Semester 6/koma/inote/android/app/.cxx/RelWithDebInfo/3g5p312b/x86/CMakeFiles/rebuild_cache.dir
