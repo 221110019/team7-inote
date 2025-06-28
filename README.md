@@ -22,7 +22,17 @@ nama & nim
 
 - Aplikasi dapat diinstall pada:
 
-- Link API: berlaku sampai ...
+```bash
+https://qwiklabs-gcp-00-48e6c8f6f1b1.ue.r.appspot.com/
+```
+
+- Link API:
+
+```bash
+https://qwiklabs-gcp-00-48e6c8f6f1b1.ue.r.appspot.com/
+```
+
+Hanya berlaku sampai 28 Juni 2025 jam 13.00
 
 ## Penjelasan Arsitektur Cloud yang diterapkan
 
@@ -33,8 +43,6 @@ nama & nim
 ## Petunjuk Penggunaan Aplikasi
 
 fitur-fitur
-
-<a id="part50"></a>
 
 ## Petunjuk installasi dan menjalankan di Local Enviroment
 
