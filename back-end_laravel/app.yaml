@@ -1,0 +1,46 @@
+runtime: php82
+env: standard
+runtime_config:
+  document_root: public
+
+handlers:
+  - url: /(.*\.(gif|png|jpg|css|js|svg|woff|woff2|ttf|eot))$
+    static_files: public/\1
+    upload: public/.*\.(gif|png|jpg|css|js|svg|woff|woff2|ttf|eot)$
+
+  - url: /.*
+    script: auto
+
+automatic_scaling:
+  max_instances: 1
+
+env_variables:
+  VIEW_COMPILED_PATH: /tmp
+  LOG_CHANNEL: stderr
+  LOG_FILE: /tmp/laravel.log
+  APP_ENV: production
+  APP_DEBUG: true
+  APP_KEY: base64:AubOzgN5IG5W4AQ3u9njqpni7Eoyv+SS6J48R4674bs=
+  CACHE_DRIVER: database
+  SESSION_DRIVER: database
+  APP_STORAGE: /tmp
+  APP_LOG: daily
+  APP_TIMEZONE: UTC
+  APP_SERVICES_CACHE: /tmp/services.php
+  APP_PACKAGES_CACHE: /tmp/packages.php
+  APP_CONFIG_CACHE: /tmp/config.php
+  APP_ROUTES_CACHE: /tmp/routes.php
+
+  DB_CONNECTION: mysql
+  DB_DATABASE: inote_database
+  DB_USERNAME: root
+  DB_PASSWORD: "54rz/6m}7z5Jvl))"
+  DB_SOCKET: "/cloudsql/qwiklabs-gcp-00-48e6c8f6f1b1:us-east1:myinstance"
+  DB_HOST: 127.0.0.1
+  DB_PORT: 3306
+  QUEUE_CONNECTION: sync
+  LOG_DELETE: true
+  GOOGLE_VISION_PROJECT_ID: project_id
+
+beta_settings:
+  cloud_sql_instances: qwiklabs-gcp-00-48e6c8f6f1b1:us-east1:myinstance
